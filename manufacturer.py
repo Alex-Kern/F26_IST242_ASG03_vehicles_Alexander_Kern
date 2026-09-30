@@ -10,3 +10,6 @@ class Manufacturer:
     @property
     def country(self) -> str:
         return self._country
+
+    def __str__(self) -> str:
+        return f"{self._name}, {self._country}"
