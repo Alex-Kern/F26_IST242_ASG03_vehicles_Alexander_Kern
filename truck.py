@@ -20,3 +20,6 @@ class Truck(Vehicle):
 
     def number_of_wheels(self) -> int:
         return 6 if self._is_dually else 4
+
+    def __str__(self) -> str:
+        return f"({self._manufacturer}) {self._model}, mpg: {self._mpg:.2f} is dually truck: {self._is_dually}"
