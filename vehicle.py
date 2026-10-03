@@ -1,8 +1,10 @@
 from abc import ABC, abstractmethod
+from functools import total_ordering
 from manufacturer import Manufacturer
 from auto_model import AutoModel
 
 
+@total_ordering
 class Vehicle(ABC):
     def __init__(self, manufacturer: Manufacturer, model: AutoModel, mpg: float):
         self._manufacturer = manufacturer
@@ -31,3 +33,13 @@ class Vehicle(ABC):
 
     def how_far_with(self, num_of_gallons: int) -> float:
         return float(self._mpg * num_of_gallons)
+
+    def __eq__(self, other: object) -> bool:
+        if not isinstance(other, Vehicle):
+            return NotImplemented
+        return self.release_year == other.release_year
+
+    def __lt__(self, other: object) -> bool:
+        if not isinstance(other, Vehicle):
+            return NotImplemented
+        return self.release_year < other.release_year
