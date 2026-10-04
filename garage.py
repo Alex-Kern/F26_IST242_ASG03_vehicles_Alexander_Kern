@@ -17,3 +17,6 @@ class Garage:
 
     def sort_by_release_year(self) -> None:
         self._vehicles.sort()
+
+    def __str__(self) -> str:
+        return "\n".join(str(v) for v in self._vehicles)
