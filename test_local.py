@@ -46,5 +46,5 @@ def test_garage_encapsulation_and_sorting():
     # Check sort order by release year (1967 before 2022)
     garage.sort_by_release_year()
     sorted_vehicles = garage.vehicles
-    assert sorted_vehicles[0].release_year == 1967
+    assert sorted_vehicles[0].release_year == 1967 
     assert sorted_vehicles[1].release_year == 2022
