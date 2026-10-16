@@ -1,2 +1,3 @@
 # F26_IST242_ASG03_vehicles_Alexander_Kern
+This project is basically a digital garage that lets you catalog and organize different cars and trucks. It tracks key details for each vehicle, like who made it, its fuel efficiency, and what year it first came out, while handling the unique quirks of specific vehicle types, such as whether a truck has extra rear wheels. Once you add vehicles to the garage, the system can automatically organize them from oldest to newest based on their original release year and calculate how far any vehicle can travel on a set amount of gas.
 <img width="1365" height="767" alt="image" src="https://github.com/user-attachments/assets/7c04ddf0-0f2a-4daf-bbe1-5ed06c215ae9" />
